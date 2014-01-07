@@ -1,0 +1,178 @@
+<html lang="en">
+
+    <head>
+    
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background: #fff;
+            }
+            .icon {
+                margin: 50px auto 0;
+                width: 200px;
+                height: 200px;
+                background: #e2ded4;
+                border-radius: 45px;
+                overflow: hidden;
+                position: relative;
+            }
+            .icon:before {
+                content: '';
+                width: 110px;
+                height: 140px;
+                background: #c8c1b0;
+                position: absolute;
+                bottom: -9px;
+                right: 9px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+            .icon .circle {
+                border-radius: 50%;
+                position: relative;
+                z-index: 10;
+            }
+            .icon .circle.flash {
+                background: #101318;
+                width: 40px;
+                height: 40px;
+                float: right;
+                margin: 15px;
+            }
+            .circle.flash .flare {
+                width: 24px;
+                height: 24px;
+                margin: 8px;
+                border: 3px solid #182432;
+            }
+            .circle.flash .spot {
+                width: 14px;
+                height: 14px;
+                margin: 2px;
+            }
+            .circle.flash .spot:before {
+                content: '';
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                background: #29486b;
+                position: absolute;
+                left: 3px;
+                top: 1px;
+            }
+            .circle.flash .spot:after {
+                content: '';
+                border-radius: 50%;
+                width: 2px;
+                height: 2px;
+                background: #29486b;
+                position: absolute;
+                left: 6px;
+                bottom: 2px;
+            }
+            .circle.lens {
+                background: #e2ded4;
+                width: 115px;
+                height: 115px;
+                margin: -20px auto 0;
+            }
+            .lens .flare {
+                width: 99px;
+                height: 99px;
+                border: 10px solid #182432;
+                position: relative;
+                top: 8px;
+                left: 8px;
+            }
+            .lens .spot {
+                width: 54px;
+                height: 54px;
+                top: 12px;
+                left: 12px;
+            }
+            .lens .spot:before {
+                content: '';
+                border-radius: 50%;
+                width: 29px;
+                height: 29px;
+                background: #29486b;
+                position: absolute;
+                left: 13px;
+                top: 5px;
+            }
+            .lens .spot:after {
+                content: '';
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                background: #29486b;
+                position: absolute;
+                left: 24px;
+                bottom: 8px;
+            }
+            .flare {
+                border-radius: 50%;
+                background: #1f3854;
+            }
+            .spot {
+                background: #182432;
+                border-radius: 50%;
+                position: relative;
+            }
+            .top {
+                background: #8e6051;
+                overflow: hidden;
+                border-radius: 45px 45px 0 0;
+                height: 65px;
+                border-bottom: 2px solid #333;
+            }
+            .rainbow {
+                margin-left: 15px;
+            }
+            .color {
+                width: 8px;
+                height: 65px;
+                display: block;
+                float: left;
+            }
+            .red {
+                background-color: #f13e32;
+            }
+            .yellow {
+                background-color: #ffd700;
+            }
+            .green {
+                background-color: #60e37e;
+            }
+            .blue {
+                background-color: #40bce4;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="icon">
+        <div class="top">
+            <div class="rainbow">
+                <span class="color red"></span>
+                <span class="color yellow"></span>
+                <span class="color green"></span>
+                <span class="color blue"></span>
+            </div>
+            <div class="circle flash">
+                <div class="flare">
+                    <div class="spot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="circle lens">
+            <div class="flare">
+                <div class="spot"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
